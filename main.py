@@ -17,9 +17,11 @@ import openpyxl
 from openpyxl import Workbook
 
 #main code starts here!
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.presences = True
 intents.members = True
+intents.message_content = True
+
 
 bot = commands.Bot(command_prefix='%', intents=intents)
 
